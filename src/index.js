@@ -38,7 +38,7 @@ const refs = {
   const listMarkup = countries.map((country) => {
            return  `<li>
            <img src=${country.flags.svg} width=50px>
-            <p> ${country.name.common}</p>
+            <p> ${country.name.official}</p>
         </li>`;
          ;
       })
@@ -50,7 +50,7 @@ const refs = {
           const languagesMarkupArray = Object.values(country.languages).map((language) => {return `<li>${language}</li>`}).join("");
           return  `<li>
         <img src=${country.flags.svg} width=300px>
-        <p> ${country.name.common}</p>
+        <p> ${country.name.official}</p>
         <p>Capital: ${country.capital}</p>
         <p>Population: ${country.population}</p>
         <p>Languages: <ul> 
